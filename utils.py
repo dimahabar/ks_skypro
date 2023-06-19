@@ -2,11 +2,10 @@ import json
 from datetime import datetime
 
 def get_data():
-    '''Обращаемся к файлу json'''
     with open('operations.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
     return data
-
+print(get_data())
 
 def get_filtered_data(data, filter_empty_from=False):
 
