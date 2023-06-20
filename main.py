@@ -9,7 +9,7 @@ def main():
     data = get_formatted_data(data)
     print()
 
-    print('INFO: Вывод транзакции ...')
+    print('INFO: Вывод транзакции ...' )
 
     for row in data:
         print(row, end='\n\n')
