@@ -42,13 +42,13 @@ def encode_bill_info(bill_info):
     bill, info = bill_info[-1], " ".join(bill_info[:-1])
     if len(bill) == 16:
         # print(f"Счета карты до: {bill}")
-        bill = f"{bill[:4]}{ bill[4:6] }** **** {bill[-4:]}"
+        bill = f"{bill[:4]}{bill[4:6]}** **** {bill[-4:]}"
         #print(f"Счета карты после: {bill}")
         #assert (False)
 
     else:
         # print(f"Счет банка до: { bill }")
-        bill = f"** { bill[-4:]}"
+        bill = f"** {bill[-4:]}"
         # print(f"Счет банка после: { bill }")
         # assert (False)
 
